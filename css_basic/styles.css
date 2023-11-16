@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+
+}
+
+header{
+    background-color:cornsilk;
+}
+
+footer{
+    background-color:cornsilk;
+}
+
+table, th, td {
+    border: 2px solid;
+    width: 700px;
+  }
+
+  h3{
+    color: purple;
+    font-style: italic;
+  }
+
+  h6{
+    font-style: oblique;
+  }
+
+  h2{
+    text-align: center;
+  }
+  
