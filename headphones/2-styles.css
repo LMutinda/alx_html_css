@@ -151,7 +151,70 @@
         text-align: center;
         padding-bottom: 8%;
         padding-top: 40px;
+        text-wrap: balance;
       }
+
+      .small-screen{
+        display: none;
+      }
+
+      @media screen and (max-width: 1200px) {
+        header {
+          background-position: 42% 50%;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .header {
+          background-position: 44% 50%;
+          flex-direction: column;
+          align-items: center;
+          /* transition: background-position 0.2s ease; */
+        }
+        
+        
+      
+        .header-container .header-logo {
+          width: 50%;
+          height: auto;
+        }
+      
+        .nav {
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          margin: 1rem auto;
+          
+        }
+      
+        .nav li {
+          width: 100%;
+          margin: 0.5rem auto;
+        }
+
+        .small-screen{
+          display: inline-block;
+          align-self: flex-start;
+          height: auto;
+          margin-left: 10px;
+          margin-top: 10px;
+          
+          
+        }
+        
+
+        .header-body{
+          
+          align-items: center;
+          text-align: center;
+          text-wrap: balance;
+        }
+
+        
+      
+        
+      }
+      
 
 /* Body
       ============================= */
@@ -207,6 +270,19 @@
         text-align: center;
         padding-bottom: 8%;
         padding-top: 10px;
+        text-wrap: balance;
+      }
+
+      @media screen and (max-width: 480px) {
+        
+        .what-we-do .section-body{
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .what-we-do .header-text{
+          text-wrap: balance;
+        }
       }
 
 
@@ -238,6 +314,7 @@
         color: var(--color-white);
         text-align: center;
         padding-bottom: 50px;
+        text-wrap: balance;
       }
 
       .our-results .item{
@@ -288,4 +365,21 @@
         color: var(--color-white);
         
         
+      }
+
+      @media screen and (max-width: 480px) {
+        .our-results .col{
+          flex-direction: column;
+          align-items: center;
+         
+        }
+
+        .our-results{
+          height: auto;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding-bottom: 20px;
+        }
+
       }
