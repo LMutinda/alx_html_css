@@ -1,0 +1,1 @@
+Creating a web page based on the Figma image
